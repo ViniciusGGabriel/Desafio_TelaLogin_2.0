@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <!-- Link do css principal -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <!-- Link do css caso o e-mail seja valido -->
+    <link rel="stylesheet" href="styles/_sucesso.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <main class="container">
+      <div class="container-fluid">
+        <section class="section_txt_inputs">
+          <div class="text_content">
+            <h1 class="title_txt">Stay updated!</h1>
+            <span class="text_info">
+              <p class="text">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p>
+            </span>
+            <!-- Lista de seleção -->
+            <ol class="ordeal_list">
+              <li class="list_item">
+                <input
+                  type="checkbox"
+                  name="checkbox_discovery"
+                  id="chk_discovey"
+                  class="inputs_check"
+                /><span>Product discovery and building what matters</span>
+              </li>
+              <li class="list_item">
+                <input
+                  type="checkbox"
+                  name="checkbox_ensure"
+                  id="chk_ensure"
+                  class="inputs_check"
+                /><span>Measuring to ensure updates are a success</span>
+              </li>
+              <li class="list_item">
+                <input
+                  type="checkbox"
+                  name="checkbox_much"
+                  id="chk_much"
+                  class="inputs_check"
+                /><span>And much more!</span>
+              </li>
+            </ol>
+          </div>
+          <!-- Formulário de e-mail -->
+          <form method="get" class="form_input_label" id="form_input_label">
+            <div class="label_txt">
+              <label for="form_input_email" class="email_label" id="email_label"
+                >Email address</label
+              >
+              <!-- Label vazio para msg de erro -->
+              <label
+                for="form_btn_email"
+                class="email_label"
+                id="input_error"
+              ></label>
+            </div>
+            <input
+              type="email"
+              placeholder="email@company.com"
+              class="input_email"
+              id="form_input_email"
+              autocomplete="on"
+            />
+            <!-- Btn de envio -->
+            <button type="submit" class="btn_submit" id="form_btn_email">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Vinícius Gabriel</a>.
+          </div>
+        </section>
+
+        <section class="img_section">
+          <div class="img_content">
+            <img
+              src="../assets/images/illustration-sign-up-desktop.svg"
+              alt="imagem_desktop_login"
+              class="img_desktop"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    
+    <div id="result"></div>
+
+    <script src="script/JavaScript/main.js"></script>
+  </body>
+</html>

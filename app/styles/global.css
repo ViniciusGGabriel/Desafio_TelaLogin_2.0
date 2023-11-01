@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --tomato: hsl(4, 100%, 67%);
+  --tomato-opacity: hsla(4, 100%, 67%, 0.438);
+  --family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--family);
+}
+
+.container {
+  /* Display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Colors */
+  background-color: var(--dark-slate-grey);
+}
+
+.container-fluid {
+  /* Display */
+  display: flex;
+  align-items: center;
+  margin: 310px;
+  height: 83vh;
+  border-radius: 20px;
+  /* colors */
+  background-color: var(--white);
+}
+
+.section_txt_inputs {
+  margin: 35px 0px 35px 35px;
+}
+
+.title_txt {
+  /* Colors */
+  color: var(--dark-slate-grey);
+  /* Tipografia */
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.text_info {
+  /* Colors */
+  color: var(--grey);
+  /* Tipografia */
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 70px;
+}
+
+.ordeal_list {
+  /* Tipografia*/
+  font-size: 0.9rem;
+  font-weight: 400;
+  /* Display */
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.list_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inputs_check {
+  /* Display */
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 7px 0px 7px 0px;
+  margin-right: 10px;
+  /* Aparece */
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  /* Colors */
+  border: 1px solid var(--white);
+  background-color: var(--dark-slate-grey);
+}
+
+.inputs_check:checked {
+  background-color: var(--tomato);
+  transition: 0.3s;
+}
+
+.inputs_check:checked::after {
+  /* Display */
+  content: "\2713";
+  position: relative;
+  top: -0.01em;
+  left: 0.45em;
+  /* Colors and tipografia */
+  color: var(--white);
+  font-size: 0.8em;
+}
+
+.form_input_label {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email_label {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+#input_error {
+  color: var(--tomato);
+}
+
+.input_email {
+  padding: 17px;
+  border: solid 2px var(--grey);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.erro_input {
+  border: solid 2px var(--tomato) !important;
+  background-color: var(--tomato-opacity);
+}
+
+.btn_submit {
+  /* Color */
+  color: var(--white);
+  background-color: var(--dark-slate-grey);
+  /* Display */
+  padding: 17px;
+  border-radius: 10px;
+  border: none;
+  /* Tipografia */
+  font-weight: bolder;
+}
+
+.btn_submit:hover {
+  /* Colors */
+  background-color: var(--tomato);
+  /* Display */
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.img_content {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-right: 0;
+}
+
+.img_desktop {
+  width: 90%;
+}
+
+.attribution {
+  margin: 10px;
+  font-size: smaller;
+}
